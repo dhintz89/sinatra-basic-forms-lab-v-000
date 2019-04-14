@@ -1,10 +1,10 @@
 class Puppy < Sinatra
-  attr_reader :name, :breed, :months_old
+  attr_reader :name, :breed, :age
   
   def initialize(name, breed, age)
     @name = name
     @breed = breed
-    @months_old = age
+    @age = age
   end
   
 end
