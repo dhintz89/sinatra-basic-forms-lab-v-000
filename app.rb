@@ -8,6 +8,7 @@ class App < Sinatra::Base
 
   post "/puppy" do
     @new_pup = Puppy.new(name, breed, age)
+    erb :display_puppy
   end
 
 end
