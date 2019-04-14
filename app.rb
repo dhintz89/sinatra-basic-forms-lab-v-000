@@ -7,8 +7,7 @@ class App < Sinatra::Base
   end
 
   post "/puppy" do
-    
-    Puppy.new()
+    @new_pup = Puppy.new(name, breed, age)
   end
 
 end
