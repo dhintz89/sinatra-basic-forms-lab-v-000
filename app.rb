@@ -7,6 +7,7 @@ class App < Sinatra::Base
   end
 
   post "/puppy" do
+    
     Puppy.new()
   end
 
